@@ -1,7 +1,7 @@
 INF200 Exersices:
 =================
 
-Lisa_Hoff_Strom:
+Lisa_Hoff:
 -------------------
 
 This repository contains all the exersices written as part of the
