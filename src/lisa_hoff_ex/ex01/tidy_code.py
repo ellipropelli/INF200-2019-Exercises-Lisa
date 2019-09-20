@@ -1,7 +1,7 @@
 from random import randint as a
 
-__author__ = ''
-__email__ = '@nmbu.no'
+__author__ = 'Lisa Hoff '
+__email__ = 'lisast@nmbu.no'
 
 def generator():
     return randint(1, 6)
