@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+__author__ = "Lisa Hoff"
+__email__ = "lisast@nmbu.no"
+
+
 from collections import Counter
 from math import log
 
