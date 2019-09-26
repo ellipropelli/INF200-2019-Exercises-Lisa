@@ -1,18 +1,25 @@
 # -*- coding: utf-8 -*-
 
-#__author__ = "Lisa Hoff"
-#__email__ = "lisahoffstr@gmail.com"
-
-from collections import Counter, defaultdict
+from collections import Counter
+from math import log
 
 
 def letter_freq(txt):
-    # Best solution
+    # Best solution, added from sample solution.
     return Counter(txt.lower())
 
 
 def entropy(message):
-    pass
+    letter_count = letter_freq(message)
+
+    n = sum(letter_count.values())
+    h = 0
+
+    for number in letter_count.values():
+        p = number / n
+        h += p * log(p, 2)
+
+    return -h
 
 
 if __name__ == "__main__":
