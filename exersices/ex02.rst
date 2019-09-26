@@ -36,10 +36,12 @@ Create file ``file_stats.py`` and paste the following code into it:
 
 Then write code for the ``char_counts()`` function that opens the file
 with the given ``filename`` using encoding ``utf-8`` and reads the
-entire file content into a single string. It shall then count how often
+entire file content into a single string.
+
+It shall then count how often
 each character code (0–255) occurs in the string and return the result
-as a list or tuple, where ``result[i]`` gives the number of occurances
-of charactor code ``i``.
+as a list or tuple, where ``result[i]`` gives the number of occurrences
+of character code ``i``.
 
 Notes
 ^^^^^
