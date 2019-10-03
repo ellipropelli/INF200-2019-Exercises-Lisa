@@ -53,3 +53,14 @@ def test_unordered_elements():
     """ii: Test median for list with unordered elements."""
     assert median([5, 2, 9]) == 5
     assert median([5, 2, 9, 12]) == 7
+
+
+def test_empty():
+    """iii: A test checking that requesting the median of an empty list
+    raises a ValueError exception
+"""
+    with pytest.raises(ValueError):
+        median([])
+
+    with pytest.raises(ValueError):
+        median(())
