@@ -18,3 +18,8 @@ def median(data):
     n = len(sdata)
     return (sdata[n//2] if n % 2 == 1
         else 0.5 * (sdata[n//2 - 1] + sdata[n//2]))
+
+def test_single():
+    """i: A test that the median function returns the correct value for a
+    one-element list"""
+    assert median([5]) == 5
