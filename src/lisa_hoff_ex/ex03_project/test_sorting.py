@@ -73,17 +73,17 @@ def test_original_unchanged():
 
 def test_sort_sorted():
     """Test that sorting works on sorted data."""
-    pass
+    assert bubble_sort(range(10)) == list(range(10))
 
 
 def test_sort_reversed():
     """Test that sorting works on reverse-sorted data."""
-    pass
+    assert bubble_sort([4, 3, 2, 1]) == [1, 2, 3, 4]
 
 
 def test_sort_all_equal():
     """Test that sorting handles data with identical elements."""
-    pass
+    assert bubble_sort([2] * 10) == [2] * 10
 
 
 def test_sorting():
