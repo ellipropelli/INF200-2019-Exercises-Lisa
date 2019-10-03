@@ -41,3 +41,9 @@ def test_ordered_elements():
     """ii: Test median for list with ordered elements."""
     assert median([1, 2, 3]) == 2
     assert median([1, 2, 3, 4]) == 2.5
+
+
+def test_reverse_elements():
+    """ii: Test median for list with reverse-sorted elements."""
+    assert median([3, 2, 1]) == 2
+    assert median([4, 3, 2, 1]) == 2.5
