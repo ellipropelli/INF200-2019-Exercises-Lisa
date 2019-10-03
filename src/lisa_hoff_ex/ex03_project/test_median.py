@@ -64,3 +64,14 @@ def test_empty():
 
     with pytest.raises(ValueError):
         median(())
+
+
+def test_unchanged():
+    """iv: A test that ensures that the median function leaves the
+    original data unchanged.
+"""
+    data = [4, 5, 1, 3, 2]
+    median(data)
+    assert data == [4, 5, 1, 3, 2]
+
+
