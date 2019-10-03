@@ -26,11 +26,11 @@ def bubble_sort(in_data):
     return s_data
 
 
-    def test_empty():
-        """Test that the sorting function works for empty list"""
+def test_empty():
+    """Test that the sorting function works for empty list"""
+
     assert bubble_sort([]) == []
     assert bubble_sort(()) == []
-
 
 
 def test_single():
@@ -57,7 +57,7 @@ def test_sorted_is_not_original():
 
 def test_original_unchanged():
     """
-    Test that sorting leaves the original data unchanged.
+    Test that sorting leaves the data data unchanged.
 
     Consider
 
