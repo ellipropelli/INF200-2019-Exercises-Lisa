@@ -5,8 +5,7 @@ __email__ = 'lisast@nmbu.no'
 
 import pytest
 
-
-def median(data):
+def median(data):  # Code from Task B: Testing median function
     """
     Returns median of data.
 
@@ -14,10 +13,14 @@ def median(data):
     :return: Median of data
     """
 
-    sdata = sorted(data)
-    n = len(sdata)
-    return (sdata[n//2] if n % 2 == 1
-        else 0.5 * (sdata[n//2 - 1] + sdata[n//2]))
+    if len(data) == 0:
+        raise ValueError
+
+    s_data = sorted(data)
+    n = len(s_data)
+    return (s_data[n // 2] if n % 2 == 1
+            else 0.5 * (s_data[n // 2 - 1] + s_data[n // 2]))
+
 
 def test_single():
     """i: A test that the median function returns the correct value for a
@@ -80,5 +83,3 @@ def test_tuple():
     as well as lists"""
     assert median((1, 2, 3)) == 2
     assert median((1, 2, 3, 4)) == 2.5
-
-
