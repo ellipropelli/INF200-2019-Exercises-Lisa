@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct  3 20:20:09 2019
-
-@author: lisahoffstrom
-"""
-
 # -*- coding: utf-8 -*-
 
 __author__ = 'Lisa Hoff'
@@ -94,4 +86,5 @@ def test_sorting():
     ensure that they are sorted correctly. These could be lists of
     numbers of different length or lists of strings.
     """
-    pass
+    assert bubble_sort([4, 2, 8, 7]) == [2, 4, 7, 8]
+    assert bubble_sort([4, 2, 8, 7, 5]) == [2, 4, 5, 7, 8]
