@@ -35,7 +35,7 @@ def bubble_sort(in_data):
 
 def test_single():
     """Test that the sorting function works for single-element list"""
-    pass
+    assert bubble_sort([3]) == [3]
 
 
 def test_sorted_is_not_original():
