@@ -35,3 +35,9 @@ def test_even_num_elements():
     """ii: Test median for lists with even number of elements."""
     assert median([3, 1, 2, 4]) == 2.5
     assert median([3, 2, 1, 4, 3, 5]) == 3
+
+
+def test_ordered_elements():
+    """ii: Test median for list with ordered elements."""
+    assert median([1, 2, 3]) == 2
+    assert median([1, 2, 3, 4]) == 2.5
