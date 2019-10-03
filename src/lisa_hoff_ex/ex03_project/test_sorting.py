@@ -25,11 +25,12 @@ def bubble_sort(in_data):
 
     return s_data
 
+
     def test_empty():
         """Test that the sorting function works for empty list"""
+    assert bubble_sort([]) == []
+    assert bubble_sort(()) == []
 
-
-pass
 
 
 def test_single():
