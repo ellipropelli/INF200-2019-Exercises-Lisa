@@ -50,7 +50,9 @@ def test_sorted_is_not_original():
     Now sorted_data shall be a different object than data,
     not just another name for the same object.
     """
-    pass
+    data = [3, 2, 1]
+    result = bubble_sort(data)
+    assert data is not result
 
 
 def test_original_unchanged():
