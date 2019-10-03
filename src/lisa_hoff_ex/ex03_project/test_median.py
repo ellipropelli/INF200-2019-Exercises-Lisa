@@ -75,3 +75,10 @@ def test_unchanged():
     assert data == [4, 5, 1, 3, 2]
 
 
+def test_tuple():
+    """v: A test that ensures that the median function works for tuples
+    as well as lists"""
+    assert median((1, 2, 3)) == 2
+    assert median((1, 2, 3, 4)) == 2.5
+
+
