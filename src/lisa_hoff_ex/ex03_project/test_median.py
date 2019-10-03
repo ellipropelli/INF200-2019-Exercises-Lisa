@@ -23,3 +23,9 @@ def test_single():
     """i: A test that the median function returns the correct value for a
     one-element list"""
     assert median([5]) == 5
+
+
+def test_odd_num_elements():
+    """ii: Test median for lists with odd number of elements."""
+    assert median([3, 1, 2]) == 2
+    assert median([3, 1, 2, 3, 5]) == 3
