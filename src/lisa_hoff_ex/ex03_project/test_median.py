@@ -3,6 +3,7 @@
 __author__ = 'Lisa Hoff'
 __email__ = 'lisast@nmbu.no'
 
+
 import pytest
 
 def median(data):  # Code from Task B: Testing median function
