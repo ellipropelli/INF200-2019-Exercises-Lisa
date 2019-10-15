@@ -59,7 +59,15 @@ def single_game(num_players):
     num_moves : int
         Number of moves the winning player needed to reach the goal
     """
-    pass
+
+    positions = [0] * num_players
+    num_moves = 0
+
+    while end_of_game(positions) is not True:
+        num_moves += 1
+        for player in range(num_players):
+            positions[player] = move_position(positions[player])
+    return num_moves
 
 
 def multiple_games(num_games, num_players):
