@@ -8,7 +8,7 @@ import random
 
 def roll_dice():
     """
-    Returns random number of dice 
+    Returns random number of dice.
     """
     return random.randint(1, 6)
 
@@ -110,6 +110,12 @@ def multi_game_experiment(num_games, num_players, seed):
     Returns
     -------
     num_moves : list
-        List with the numbedr of moves needed in each game.
+        List with the number of moves needed in each game.
     """
-    pass
+    random.seed(seed)
+
+    num_moves = []
+    for game in range(num_games):
+        moves_single_game = single_game(num_players)
+        num_moves.append(moves_single_game)
+    return num_moves
