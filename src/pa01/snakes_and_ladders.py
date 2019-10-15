@@ -3,12 +3,14 @@
 __author__ = 'Lisa Hoff, Elinor Brede Skårås'
 __email__ = 'lisast@nmbu.no, elinor2511@gmail.com'
 
+import random
+
 
 def roll_dice():
     """
     Returns random number of dice 
     """
-    pass
+    return random.randint(1, 6)
 
 
 def move_position(position):
