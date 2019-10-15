@@ -40,7 +40,9 @@ def end_of_game(positions):
     :param positions:
     :return: 
     """
-    pass
+    for number in positions:
+        if number >= 90:
+            return True
 
 
 def single_game(num_players):
