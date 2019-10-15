@@ -4,6 +4,32 @@ __author__ = 'Lisa Hoff, Elinor Brede Skårås'
 __email__ = 'lisast@nmbu.no, elinor2511@gmail.com'
 
 
+def roll_dice():
+    """
+    Returns random number of dice 
+    """
+    pass
+
+
+def move_position(position):
+    """
+    Roll the dice, and moves the position. 
+    Checks if the new position is on a ladder or snake and if that´s the case 
+    then the position is changed either up or down 
+    
+    :param position: original position
+    :return: new_position: new position after one throw
+    """
+    pass
+
+
+def end_of_game(positions):
+    """
+    Returns True when one player has reached the goal. (position >= 90)
+    :param positions:
+    :return: 
+    """
+    pass
 
 
 def single_game(num_players):
