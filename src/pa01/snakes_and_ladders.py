@@ -3,12 +3,14 @@
 __author__ = 'Lisa Hoff, Elinor Brede Skårås'
 __email__ = 'lisast@nmbu.no, elinor2511@gmail.com'
 
+import random
+
 
 def roll_dice():
     """
     Returns random number of dice 
     """
-    pass
+    return random.randint(1, 6)
 
 
 def move_position(position):
@@ -20,7 +22,16 @@ def move_position(position):
     :param position: original position
     :return: new_position: new position after one throw
     """
-    pass
+    ladders_snakes = {1: 40, 8: 10, 36: 52, 43: 62, 49: 79, 65: 82, 68: 85,
+                      24: 5, 33: 3, 42: 30, 56: 37, 64: 27, 74: 12, 87: 70}
+
+    throw = roll_dice()
+    position += throw
+
+    if position in ladders_snakes:
+        position = ladders_snakes[position]
+
+    return position
 
 
 def end_of_game(positions):
@@ -29,7 +40,9 @@ def end_of_game(positions):
     :param positions:
     :return: 
     """
-    pass
+    for number in positions:
+        if number >= 90:
+            return True
 
 
 def single_game(num_players):
