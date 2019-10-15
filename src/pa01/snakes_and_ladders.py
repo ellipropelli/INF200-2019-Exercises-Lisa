@@ -4,6 +4,7 @@ __author__ = 'Lisa Hoff, Elinor Brede Skårås'
 __email__ = 'lisast@nmbu.no, elinor2511@gmail.com'
 
 import random
+import math
 
 
 def roll_dice():
@@ -119,3 +120,24 @@ def multi_game_experiment(num_games, num_players, seed):
         moves_single_game = single_game(num_players)
         num_moves.append(moves_single_game)
     return num_moves
+
+
+def standard_deviation(data, mean):
+    std_d = 0
+    for number in data:
+        std_d += (number - mean) ** 2
+    std_d = math.sqrt(std_d / (len(data)))
+
+    return std_d
+
+
+if __name__ == '__main__':
+    test_games = multi_game_experiment(100, 4, 2)
+
+    mean_dur = sum(test_games)/100
+
+    print('The shortest game duration', min(test_games))
+    print('The longest game duration', max(test_games))
+    print('The median game duration', sorted(test_games)[50])
+    print('The mean game duration', mean_dur)
+    print('standard deviation', standard_deviation(test_games, mean_dur))
